@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit — Treinadores</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/trainers.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="./home.html">Gym<span>Fit</span></a>
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="./home.html">Início</a>
+                <a href="./classes.html">Aulas</a>
+                <a href="./trainers.html" aria-current="page">Treinadores</a>
+            </nav>
+            <a class="btn btn--primary" href="./classes.html">Reservar aula</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="container grid trainers-layout">
+            <aside class="card" aria-label="Filtros de treinadores">
+                <h1 style="margin-top:0">Treinadores</h1>
+                <p class="muted">Filtra por especialização.</p>
+                <form action="#" method="get">
+                    <label class="label" for="specialization">Especialização</label>
+                    <select class="select" id="specialization" name="specialization">
+                        <option>Todas</option>
+                        <option>Yoga</option>
+                        <option>Musculação</option>
+                        <option>HIIT</option>
+                    </select>
+                </form>
+            </aside>
+
+            <section class="grid trainer-grid" aria-label="Perfis de treinadores">
+                <article class="card trainer">
+                    <img src="https://ui-avatars.com/api/?name=Ana+Santos&background=e53935&color=fff" alt="Foto de Ana Santos">
+                    <div>
+                        <h2>Ana Santos</h2>
+                        <p>Especialista em Yoga e Pilates com foco em postura, mobilidade e bem-estar.</p>
+                        <div class="chips">
+                            <span class="badge">Yoga</span>
+                            <span class="badge">Pilates</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card trainer">
+                    <img src="https://ui-avatars.com/api/?name=Joao+Silva&background=e53935&color=fff" alt="Foto de João Silva">
+                    <div>
+                        <h2>João Silva</h2>
+                        <p>Treinador de força e condicionamento para progressão segura de iniciantes.</p>
+                        <div class="chips">
+                            <span class="badge">Musculação</span>
+                            <span class="badge">CrossFit</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card trainer">
+                    <img src="https://ui-avatars.com/api/?name=Miguel+Costa&background=e53935&color=fff" alt="Foto de Miguel Costa">
+                    <div>
+                        <h2>Miguel Costa</h2>
+                        <p>Aulas de alta intensidade e cardio para melhorar resistência e performance.</p>
+                        <div class="chips">
+                            <span class="badge">HIIT</span>
+                            <span class="badge">Spinning</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">Com dedicação, tudo é possível · GymFit</div>
+    </footer>
+</body>
+</html>
