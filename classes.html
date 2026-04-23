@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymFit — Aulas</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/classes.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="./home.html">Gym<span>Fit</span></a>
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="./home.html">Início</a>
+                <a href="./classes.html" aria-current="page">Aulas</a>
+                <a href="./trainers.html">Treinadores</a>
+            </nav>
+            <a class="btn btn--ghost" href="./home.html">Voltar</a>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="container">
+            <h1 style="margin-top:0">Descobre as nossas aulas</h1>
+            <p class="muted">Encontra a aula que se encaixa no teu estilo filtrando por tipo, treinador ou dia.</p>
+
+            <form class="grid toolbar" action="#" method="get" aria-label="Filtros de aulas">
+                <div>
+                    <label class="label" for="type">Tipo</label>
+                    <select class="select" id="type" name="type">
+                        <option>Todas</option>
+                        <option>Yoga</option>
+                        <option>HIIT</option>
+                        <option>Pilates</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label" for="trainer">Treinador</label>
+                    <select class="select" id="trainer" name="trainer">
+                        <option>Todos</option>
+                        <option>Ana Santos</option>
+                        <option>João Silva</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="label" for="day">Dia</label>
+                    <select class="select" id="day" name="day">
+                        <option>Todos</option>
+                        <option>Segunda-feira</option>
+                        <option>Quarta-feira</option>
+                        <option>Sexta-feira</option>
+                    </select>
+                </div>
+                <button class="btn btn--primary" type="submit">Filtrar</button>
+            </form>
+
+            <section class="grid class-list" aria-label="Lista de aulas">
+                <article class="card">
+                    <div class="class-row">
+                        <div>
+                            <div class="class-meta">
+                                <span class="badge">Yoga</span>
+                                <span class="badge">Sala Yoga</span>
+                                <span class="badge">60 min</span>
+                            </div>
+                            <h2>Yoga Matinal</h2>
+                            <p>Seg · Qua · Sex — 07:00</p>
+                        </div>
+                        <a class="btn btn--primary" href="#">Inscrever</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="class-row">
+                        <div>
+                            <div class="class-meta">
+                                <span class="badge">HIIT</span>
+                                <span class="badge">Sala Principal</span>
+                                <span class="badge">45 min</span>
+                            </div>
+                            <h2>HIIT Intenso</h2>
+                            <p>Ter · Qui — 18:00</p>
+                        </div>
+                        <a class="btn btn--ghost" href="#">Detalhes</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="class-row">
+                        <div>
+                            <div class="class-meta">
+                                <span class="badge">Pilates</span>
+                                <span class="badge">Sala Yoga</span>
+                                <span class="badge">55 min</span>
+                            </div>
+                            <h2>Pilates Core</h2>
+                            <p>Seg · Qua · Sex — 10:00</p>
+                        </div>
+                        <a class="btn btn--primary" href="#">Inscrever</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="class-row">
+                        <div>
+                            <div class="class-meta">
+                                <span class="badge">Spinning</span>
+                                <span class="badge">Sala Spinning</span>
+                                <span class="badge">50 min</span>
+                            </div>
+                            <h2>Spinning Power</h2>
+                            <p>Ter · Qui — 19:00</p>
+                        </div>
+                        <a class="btn btn--ghost" href="#">Detalhes</a>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">Treina com a gente e sente a diferença · GymFit</div>
+    </footer>
+</body>
+</html>
