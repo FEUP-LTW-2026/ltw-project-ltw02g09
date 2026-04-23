@@ -1,0 +1,50 @@
+.trainers-layout {
+    grid-template-columns: 280px 1fr;
+    align-items: start;
+}
+
+.trainer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.trainer {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 0.9rem;
+}
+
+.trainer img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.trainer h2 {
+    margin: 0 0 0.35rem;
+    font-size: 1.05rem;
+}
+
+.trainer p {
+    margin: 0 0 0.5rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+@media (max-width: 980px) {
+    .trainers-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .trainer-grid {
+        grid-template-columns: 1fr;
+    }
+}
