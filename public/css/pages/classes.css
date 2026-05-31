@@ -1,0 +1,30 @@
+.class-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+}
+
+.class-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.grid .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .card .card-body {
+    flex: 1;
+}
+
+.grid .card .card-footer {
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+    .class-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
