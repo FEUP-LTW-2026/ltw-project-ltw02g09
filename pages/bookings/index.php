@@ -56,7 +56,7 @@ include __DIR__ . '/../../templates/navbar.php';
         <?php if ($error):   ?><div class="alert alert-danger"><?= e($error) ?></div><?php endif; ?>
 
         <div class="bookings-layout">
-            <div>
+            <div data-tabs-parent="">
                 <div class="tabs">
                     <button class="tab-btn active" data-tab="upcoming">Próximas (<?= count($upcoming) ?>)</button>
                     <button class="tab-btn" data-tab="past">Passadas</button>

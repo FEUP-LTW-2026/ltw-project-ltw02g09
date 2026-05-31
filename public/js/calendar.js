@@ -2,11 +2,12 @@ class GymCalendar {
     constructor(containerId, options = {}) {
         this.container    = document.getElementById(containerId);
         this.options      = {
-            onDayClick:   options.onDayClick   || null,
-            onEventClick: options.onEventClick || null,
-            events:       options.events       || [],
-            selectable:   options.selectable   || false,
-            minDate:      options.minDate       || null,
+            onDayClick:    options.onDayClick    || null,
+            onEventClick:  options.onEventClick  || null,
+            onMonthChange: options.onMonthChange || null,
+            events:        options.events        || [],
+            selectable:    options.selectable    || false,
+            minDate:       options.minDate        || null,
         };
         this.today        = new Date();
         this.current      = new Date(this.today.getFullYear(), this.today.getMonth(), 1);
@@ -23,11 +24,17 @@ class GymCalendar {
     prevMonth() {
         this.current = new Date(this.current.getFullYear(), this.current.getMonth() - 1, 1);
         this.render();
+        if (this.options.onMonthChange) {
+            this.options.onMonthChange(this.current.getFullYear(), this.current.getMonth());
+        }
     }
 
     nextMonth() {
         this.current = new Date(this.current.getFullYear(), this.current.getMonth() + 1, 1);
         this.render();
+        if (this.options.onMonthChange) {
+            this.options.onMonthChange(this.current.getFullYear(), this.current.getMonth());
+        }
     }
 
     setEvents(events) {
@@ -230,8 +237,10 @@ function initBookingCalendar(trainerId) {
         minDate:     todayStr,
         onDayClick:  (ds, events) => {
             showDaySlots(ds, events);
-            const [y, m] = ds.split('-');
-            loadSlots(`${y}-${m}-01`);
+        },
+        onMonthChange: (year, month) => {
+            const monthStr = `${year}-${String(month + 1).padStart(2, '0')}-01`;
+            loadSlots(monthStr);
         },
     });
 
