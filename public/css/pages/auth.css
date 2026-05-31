@@ -1,0 +1,74 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, var(--color-bg) 0%, #1e0000 100%);
+}
+
+.auth-card {
+    background-color: var(--color-bg-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: var(--shadow-lg);
+}
+
+.auth-logo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-logo .brand-link {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-white) !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.auth-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.auth-subtitle {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.75rem;
+}
+
+.auth-divider {
+    text-align: center;
+    margin: 1.25rem 0;
+    position: relative;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+}
+
+.auth-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--color-border);
+}
+
+.auth-divider span {
+    position: relative;
+    background-color: var(--color-bg-2);
+    padding: 0 0.75rem;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
