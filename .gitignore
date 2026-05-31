@@ -1,0 +1,8 @@
+database/database.db
+database/*.db
+database/*.db-shm
+database/*.db-wal
+public/uploads/*
+!public/uploads/.gitkeep
+/*.DS_Store
+/.vscode/
