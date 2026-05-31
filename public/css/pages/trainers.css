@@ -1,0 +1,38 @@
+.trainer-profile-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2rem;
+}
+
+.trainer-specializations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.trainer-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.trainer-card-body {
+    display: flex !important;
+    flex-direction: column;
+    height: 100%;
+}
+
+.trainer-card-info {
+    flex: 1;
+}
+
+.trainer-card-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+@media (max-width: 900px) {
+    .trainer-profile-grid {
+        grid-template-columns: 1fr;
+    }
+}
