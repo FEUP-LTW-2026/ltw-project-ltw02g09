@@ -37,7 +37,7 @@
 
 ```bash
 sqlite3 database/database.db < database/database.sql
-php -S localhost:9000
+php -S localhost:9000 -t public
 ```
 
 Then open [http://localhost:9000](http://localhost:9000) in your browser.
