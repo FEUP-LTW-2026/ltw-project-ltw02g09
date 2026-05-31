@@ -86,7 +86,7 @@ include __DIR__ . '/../../templates/navbar.php';
     <div class="modal">
         <div class="modal-header">
             <h3>Confirmar marcação</h3>
-            <button class="modal-close">X</button>
+            <button class="modal-close">&times;</button>
         </div>
         <form method="post" action="/?page=bookings/create">
             <div class="modal-body">

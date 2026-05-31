@@ -212,7 +212,7 @@ include __DIR__ . '/../../templates/navbar.php';
     <div class="modal">
         <div class="modal-header">
             <h3>Novo Utilizador</h3>
-            <button class="modal-close">X</button>
+            <button class="modal-close">&times;</button>
         </div>
         <form method="post">
             <div class="modal-body">

@@ -181,7 +181,7 @@ INSERT INTO equipment (name, description, category, total_quantity, available_qu
 ('Bola de Pilates', 'Bola de estabilidade para pilates e core', 'Aulas', 20, 18, 'disponivel'),
 ('Tapete de Yoga', 'Tapete antiderrapante para yoga e pilates', 'Aulas', 30, 25, 'disponivel'),
 ('Corda de Saltar', 'Corda de saltar profissional', 'Cardio', 15, 12, 'disponivel'),
-('Plat Vibratória', 'Plataforma vibratória para recuperação muscular', 'Recuperação', 2, 1, 'disponivel'),
+('Plataforma Vibratória', 'Plataforma vibratória para recuperação muscular', 'Recuperação', 2, 1, 'disponivel'),
 ('Rolo de Espuma', 'Foam roller para massagem muscular', 'Recuperação', 12, 10, 'disponivel'),
 ('Bicicleta Spinning', 'Bicicleta de spinning profissional', 'Spinning', 20, 18, 'disponivel');
 

@@ -1,8 +1,16 @@
+# Database files
 database/database.db
 database/*.db
 database/*.db-shm
 database/*.db-wal
+
+# User uploads (keep the placeholder)
 public/uploads/*
 !public/uploads/.gitkeep
-/*.DS_Store
+
+# macOS metadata
+*.DS_Store
 /.vscode/
+
+# Windows Zone.Identifier files (created when downloading files)
+*:Zone.Identifier

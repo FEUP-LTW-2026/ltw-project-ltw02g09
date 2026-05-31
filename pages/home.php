@@ -35,9 +35,12 @@ include __DIR__ . '/../templates/navbar.php';
                 <?php if (!is_logged_in()): ?>
                     <a href="/?page=register" class="btn btn-primary btn-lg">Começar agora</a>
                     <a href="/?page=classes" class="btn btn-outline btn-lg">Ver aulas</a>
-                <?php else: ?>
+                <?php elseif (current_user()['role'] === 'member'): ?>
                     <a href="/?page=classes" class="btn btn-primary btn-lg">Ver aulas</a>
                     <a href="/?page=bookings" class="btn btn-outline btn-lg">Marcações PT</a>
+                <?php else: ?>
+                    <a href="/?page=classes" class="btn btn-primary btn-lg">Ver aulas</a>
+                    <a href="/?page=trainers" class="btn btn-outline btn-lg">Treinadores</a>
                 <?php endif; ?>
             </div>
         </div>

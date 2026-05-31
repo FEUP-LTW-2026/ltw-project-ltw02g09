@@ -2,7 +2,7 @@
         <div class="container site-footer-inner">
             <div>
                 <p>&copy; <?= date('Y') ?> GymFit</p>
-                <p class="text-muted">Plataforma de gestao de ginasio</p>
+                <p class="text-muted">Plataforma de gestão de ginásio</p>
             </div>
             <div class="site-footer-contacts">
                 <p class="text-muted">Contactos</p>

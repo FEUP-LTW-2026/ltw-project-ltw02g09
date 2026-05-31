@@ -129,7 +129,7 @@ include __DIR__ . '/../../templates/navbar.php';
                         <p style="color:var(--color-text-muted);line-height:1.7"><?= e($cls['description']) ?></p>
 
                         <div style="margin-top:1rem;font-size:0.9rem;color:var(--color-text-muted)">
-                            Capacidade maxima: <?= e($cls['capacity']) ?> participantes
+                            Capacidade máxima: <?= e($cls['capacity']) ?> participantes
                         </div>
                     </div>
                 </div>

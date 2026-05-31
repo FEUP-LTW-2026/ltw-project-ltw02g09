@@ -67,10 +67,7 @@ include __DIR__ . '/../../templates/header.php';
             <button type="submit" class="btn btn-primary btn-full">Entrar</button>
         </form>
 
-        <div class="auth-divider"><span>credenciais de demonstração</span></div>
-        <div style="font-size:0.82rem;color:var(--color-text-muted);text-align:center;line-height:1.8">
-            admin / p4s5w0rd &nbsp;·&nbsp; member / 1234 &nbsp;·&nbsp; joao.silva / 1234
-        </div>
+
 
         <div class="auth-footer">
             Não tem conta? <a href="/?page=register">Registar</a>

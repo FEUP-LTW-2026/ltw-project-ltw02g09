@@ -139,8 +139,8 @@ include __DIR__ . '/../../templates/navbar.php';
                         <div class="grid grid-2" style="gap:1rem">
                             <?php foreach ($available_times as $time): ?>
                             <div style="display:block;padding:1rem;background:var(--color-bg-3);border-radius:var(--radius);border:1px solid var(--color-border);color:var(--color-text);">
-                                <strong><?= e($time['date']) ?></strong>
-                                <div style="margin-top:0.3rem"><?= e(substr($time['start_time'], 0, 5)) ?> - <?= e(substr($time['end_time'], 0, 5)) ?></div>
+                                <strong><?= e(date('d/m/Y', strtotime($time['date']))) ?></strong>
+                                <div style="margin-top:0.3rem"><?= e(substr($time['start_time'], 0, 5)) ?> &ndash; <?= e(substr($time['end_time'], 0, 5)) ?></div>
                             </div>
                             <?php endforeach; ?>
                         </div>

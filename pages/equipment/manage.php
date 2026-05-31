@@ -134,7 +134,7 @@ include __DIR__ . '/../../templates/navbar.php';
     <div class="modal">
         <div class="modal-header">
             <h3>Adicionar Equipamento</h3>
-               <button class="modal-close">X</button>
+               <button class="modal-close">&times;</button>
         </div>
         <form method="post">
             <div class="modal-body">
@@ -184,7 +184,7 @@ include __DIR__ . '/../../templates/navbar.php';
     <div class="modal">
         <div class="modal-header">
             <h3>Editar Equipamento</h3>
-               <button class="modal-close">X</button>
+               <button class="modal-close">&times;</button>
         </div>
         <form method="post" id="editEquipmentForm">
             <div class="modal-body">
